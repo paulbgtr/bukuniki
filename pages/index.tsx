@@ -19,6 +19,10 @@ export default function Home() {
             of reading. This app should help people to track their reading
             habits, and easily store all of their thoughts on a book in the app.
           </p>
+          <p className="col-md-6">
+            Name to start with is Bukuniki. This name is simply derived from the
+            words ブック and 日記.
+          </p>
         </Container>
       </main>
     </>
