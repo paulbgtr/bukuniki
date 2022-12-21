@@ -9,7 +9,10 @@ interface Props {
 
 const Button: FC<Props> = (props) => {
   return (
-    <button onClick={props.onclick} className={props.className}>
+    <button
+      onClick={props.onclick}
+      className={`${props.className} hover:opacity-70 bg-pink-300`}
+    >
       {props.children}
     </button>
   );
