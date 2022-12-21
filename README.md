@@ -3,7 +3,7 @@
 ## Book Journaling Made Simple
 
 This app should help people to track their reading
-habits, and easily store all of their thoughts on a book in the app.
+habits, and easily store all of their thoughts on a book.
 
 ## Project Status
 
