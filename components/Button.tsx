@@ -1,11 +1,18 @@
 import { FC } from "react";
+import { useRouter } from "next/router";
 
-interface ButtonProps {
+interface Props {
   children: React.ReactNode;
+  className?: string;
+  onclick?: () => void;
 }
 
-const Button: FC<ButtonProps> = (props) => {
-  return <button>{props.children}</button>;
+const Button: FC<Props> = (props) => {
+  return (
+    <button onClick={props.onclick} className={props.className}>
+      {props.children}
+    </button>
+  );
 };
 
 export default Button;
