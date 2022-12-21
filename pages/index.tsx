@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Button from "../components/Button";
-import Container from "react-bootstrap/Container";
-import styles from "../styles/Home.module.scss";
 
 const Home = () => {
   const router = useRouter();
@@ -16,14 +14,16 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="main">
-        <Container className="col-12">
-          <h1 className={styles.title}>Book journaling made simple.</h1>
-          <p className="col-md-6">
+      <main>
+        <div className="container mx-auto">
+          <h1 className="text-7xl font-bold w-3 mb-6">
+            Book journaling made simple.
+          </h1>
+          <p className="w-96 mb-6">
             Bukuniki is a web-based reading journal that will help you develop
             your reading habits and store all of your records on a book.
           </p>
-          <Button onclick={() => router.push("/coming")} className="me-2">
+          <Button onclick={() => router.push("/coming")} className="mr-3">
             Get started, It is free!
           </Button>
           <Button
@@ -31,7 +31,7 @@ const Home = () => {
           >
             Star on Github ★
           </Button>
-        </Container>
+        </div>
       </main>
     </>
   );
