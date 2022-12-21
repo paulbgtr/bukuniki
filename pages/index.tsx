@@ -1,9 +1,12 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
+import { useRouter } from "next/router";
+import Button from "../components/Button";
 import Container from "react-bootstrap/Container";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 
 const Home = () => {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -13,20 +16,21 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
-
-      <main className={styles.main}>
-        <Container>
-          <h1 className={styles.title}>bukuniki</h1>
+      <main className="main">
+        <Container className="col-12">
+          <h1 className={styles.title}>Book journaling made simple.</h1>
           <p className="col-md-6">
-            The main reason for this project is my lack of discipline in terms
-            of reading. This app should help people to track their reading
-            habits, and easily store all of their thoughts on a book in the app.
+            Bukuniki is a web-based reading journal that will help you develop
+            your reading habits and store all of your records on a book.
           </p>
-          <p className="col-md-6">
-            Name to start with is Bukuniki. This name is simply derived from the
-            words ブック and 日記.
-          </p>
+          <Button onclick={() => router.push("/coming")} className="me-2">
+            Get started, It is free!
+          </Button>
+          <Button
+            onclick={() => router.replace("https://github.com/gibsol/bukuniki")}
+          >
+            Star on Github ★
+          </Button>
         </Container>
       </main>
     </>
