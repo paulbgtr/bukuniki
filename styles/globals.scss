@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #404258;
+  font-size: 16px;
+  color: #f1f1f1;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 12px !important;
+  background-color: #f4abc4;
+  padding: 13px 18px;
+  transition-duration: 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// main container
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 0 0 0;
+  }
+}
+
+.title {
+  color: #f1f1f1;
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.main-link {
+  text-decoration: none;
+  color: #f4abc4;
+  font-size: 18px;
+  font-weight: 700;
+  transition-duration: 0.3s;
+  &:hover {
+    color: #fff;
+  }
+}
