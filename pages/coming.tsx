@@ -12,7 +12,7 @@ const ComingSoon = () => {
       </Head>
 
       <main>
-        <section className="text-center">
+        <div className="text-center my-20">
           <h1 className="text-7xl font-bold">Coming Soon...</h1>
           <p className="mt-4">
             Bukuniki is currently under active development. <br />
@@ -25,7 +25,7 @@ const ComingSoon = () => {
             </Link>{" "}
             page.
           </p>
-        </section>
+        </div>
       </main>
     </>
   );
