@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Button from "../components/Button";
+import Text from "../components/Text";
 
 const Home = () => {
   const router = useRouter();
@@ -19,10 +20,10 @@ const Home = () => {
           <h1 className="text-7xl font-bold w-3 mb-6">
             Book journaling made simple.
           </h1>
-          <p className="w-96 mb-6">
+          <Text className="w-96 mb-6">
             Bukuniki is a web-based reading journal that will help you develop
             your reading habits and store all of your records on a book.
-          </p>
+          </Text>
           <Button onclick={() => router.push("/coming")} className="mr-3">
             Get started, It is free!
           </Button>

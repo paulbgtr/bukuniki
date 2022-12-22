@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
+import Text from "../components/Text";
+import LinkHL from "../components/LinkHL";
 
 const ComingSoon = () => {
   return (
@@ -14,17 +15,14 @@ const ComingSoon = () => {
       <main>
         <div className="text-center my-20">
           <h1 className="text-7xl font-bold">Coming Soon...</h1>
-          <p className="mt-4">
+          <Text className="mt-4">
             Bukuniki is currently under active development. <br />
             You can follow the development process on our{" "}
-            <Link
-              className="main-link"
-              href={"https://github.com/gibsol/bukuniki"}
-            >
-              Github
-            </Link>{" "}
-            page.
-          </p>
+            <LinkHL href="https://github.com/gibsol/bukuniki">
+              Github page
+            </LinkHL>
+            .
+          </Text>
         </div>
       </main>
     </>
