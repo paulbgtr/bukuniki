@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { useRouter } from "next/router";
 
 interface Props {
   children: React.ReactNode;
@@ -11,7 +10,7 @@ const Button: FC<Props> = (props) => {
   return (
     <button
       onClick={props.onclick}
-      className={`${props.className} hover:opacity-70 bg-pink-300`}
+      className={`${props.className} duration-300 py-3 px-5 rounded-xl font-bold text-lg hover:opacity-70 bg-pink-300`}
     >
       {props.children}
     </button>
