@@ -1,5 +1,6 @@
 import Head from "next/head";
 import LinkHL from "../components/LinkHL";
+import Text from "../components/Text";
 
 const NotFoundPage = () => {
   return (
@@ -14,12 +15,12 @@ const NotFoundPage = () => {
       <main>
         <div className="text-center my-20">
           <h1 className="text-7xl font-bold">404</h1>
-          <p>
+          <Text>
             The page you were looking for could not be found. <br />
             <LinkHL className="main-link" href={"/"}>
               Go back home
             </LinkHL>
-          </p>
+          </Text>
         </div>
       </main>
     </>
