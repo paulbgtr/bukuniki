@@ -12,11 +12,7 @@ const ReadingStreak: FC = () => {
   };
 
   return (
-    <Card
-      className="cursor-pointer"
-      title="Current Reading Streak"
-      textSize="5xl"
-    >
+    <Card title="Current Reading Streak" textSize="5xl">
       25
     </Card>
   );
