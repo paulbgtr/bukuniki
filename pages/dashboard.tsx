@@ -1,8 +1,9 @@
 import { useRouter } from "next/router";
+import LatestJournal from "../components/LatestJournal";
+import ReadingStreak from "../components/ReadingStreak";
+import SearchBar from "../components/SearchBar";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Card from "../components/Card";
-import Container from "../components/Container";
 
 const Dashboard = () => {
   const router = useRouter();
@@ -18,23 +19,14 @@ const Dashboard = () => {
 
       <Navbar />
       <main>
-        <Container>
-          {/* Card's text size is in the form of Tailwind's "text-[size]". */}
-          <Card title="Current Reading Streak" textSize="5xl">
-            25
-          </Card>
-          <Card
-            button
-            buttonText="Continue Writing"
-            onclick={() => {
-              router.push("/my-journals"); // temporary link. will be changed to the latest journal in the future.
-            }}
-            title="Latest Journal"
-            textSize="xl"
-          >
-            Leo Tolstoy - Anna Karenina
-          </Card>
-        </Container>
+        <div className="mt-6 flex justify-center">
+          <SearchBar />
+        </div>
+        {/* Card's text size is in the form of Tailwind's "text-[size]". */}
+        <div className="mt-6 flex gap-8 justify-center">
+          <ReadingStreak />
+          <LatestJournal />
+        </div>
       </main>
     </>
   );
