@@ -2,6 +2,7 @@ import { FC } from "react";
 
 interface Props {
   title: string;
+  id?: string;
   textSize?: string;
   children?: React.ReactNode;
   button?: boolean;
@@ -11,7 +12,7 @@ interface Props {
 
 const Card: FC<Props> = (props) => {
   return (
-    <div className="block max-w-sm p-6 rounded-lg shadow-md">
+    <div id={props.id} className="block max-w-sm p-6 rounded-lg shadow-md">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-pink-300">
         {props.title}
       </h5>
