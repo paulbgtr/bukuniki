@@ -9,7 +9,7 @@ const LatestJournal = () => {
       button
       buttonText="Continue Writing"
       onclick={() => {
-        router.push("/my-journals"); // temporary link. will be changed to the latest journal in the future.
+        router.push("/coming"); // temporary link. will be changed to the latest journal in the future.
       }}
       title="Latest Journal"
       textSize="xl"

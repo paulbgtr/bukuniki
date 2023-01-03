@@ -1,3 +1,4 @@
+// todo: user icon and dropdown menu
 import { useState } from "react";
 import Link from "next/link";
 
@@ -58,10 +59,10 @@ const Navbar = () => {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-white hover:opacity-30 duration-100">
-                <Link href="/my-journals">My Journals</Link>
+                <Link href="/coming">My Journals</Link>
               </li>
               <li className="text-white hover:opacity-30 duration-100">
-                <Link href="/help">Help</Link>
+                <Link href="/coming">Help</Link>
               </li>
             </ul>
           </div>
