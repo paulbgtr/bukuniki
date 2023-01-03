@@ -12,8 +12,8 @@ const ReadingStreak: FC = () => {
   };
 
   return (
-    <Card title="Current Reading Streak" textSize="5xl">
-      25
+    <Card textSize="7xl" title="Current Reading Streak">
+      20
     </Card>
   );
 };

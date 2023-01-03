@@ -2,8 +2,8 @@ import { FC } from "react";
 
 interface Props {
   title: string;
-  children: React.ReactNode;
   textSize?: string;
+  children: React.ReactNode;
   button?: boolean;
   buttonText?: string;
   onclick?: () => void;
