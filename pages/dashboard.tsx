@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import NewJournal from "../components/NewJournal";
 import LatestJournal from "../components/LatestJournal";
 import ReadingStreak from "../components/ReadingStreak";
 import SearchBar from "../components/SearchBar";
@@ -26,6 +27,9 @@ const Dashboard = () => {
         <div className="mt-6 flex gap-8 justify-center">
           <ReadingStreak />
           <LatestJournal />
+        </div>
+        <div className="mt-6 flex gap-8 justify-center">
+          <NewJournal />
         </div>
       </main>
     </>
