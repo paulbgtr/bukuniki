@@ -16,9 +16,9 @@ const Card: FC<Props> = (props) => {
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-pink-300">
         {props.title}
       </h5>
-      <p className={`text-${props.textSize} dark:text-gray-400`}>
+      <div className={`text-${props.textSize} dark:text-gray-400`}>
         {props.children}
-      </p>
+      </div>
       {props.button ? (
         <button
           className="duration-300 mt-3 py-2 px-3 rounded-xl font-bold text-md hover:opacity-70 bg-pink-300"
