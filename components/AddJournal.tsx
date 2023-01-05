@@ -20,7 +20,7 @@ const AddJournal = () => {
     <>
       <button
         onClick={notify}
-        className="rounded-full bg-pink-300 px-4 py-2 text-3xl text-white hover:opacity-70 duration-300"
+        className="rounded-full bg-pink-300 px-4 pt-1 pb-2 text-3xl text-white hover:opacity-70 duration-300"
       >
         +
       </button>
