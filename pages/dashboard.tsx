@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import NewJournal from "../components/NewJournal";
 import LatestJournal from "../components/LatestJournal";
 import ReadingStreak from "../components/ReadingStreak";
@@ -7,8 +6,6 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 
 const Dashboard = () => {
-  const router = useRouter();
-
   return (
     <>
       <Head>

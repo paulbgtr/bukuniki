@@ -1,3 +1,4 @@
+import React from "react";
 import Card from "./Card";
 import AddJournal from "./AddJournal";
 import { useState } from "react";

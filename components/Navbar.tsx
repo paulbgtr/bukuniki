@@ -1,4 +1,6 @@
 // todo: user icon and dropdown menu
+
+import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 

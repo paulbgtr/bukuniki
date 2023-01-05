@@ -1,5 +1,6 @@
 // Description: The Add Journal "+" button for the New Journal component.
 
+import React from "react";
 import { notify } from "./NewJournalNotification";
 
 const AddJournal = () => {

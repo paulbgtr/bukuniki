@@ -1,5 +1,6 @@
 // todo: flip card onclick to show streak history
 
+import React from "react";
 import { FC } from "react";
 import { useState } from "react";
 import Card from "./Card";
