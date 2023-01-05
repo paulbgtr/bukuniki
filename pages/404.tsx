@@ -7,7 +7,7 @@ const NotFoundPage = () => {
     <>
       <Head>
         <title>bukuniki / 404</title>
-        <meta name="description" content="Online readin journal." />
+        <meta name="description" content="bukuniki Not Found 404" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
