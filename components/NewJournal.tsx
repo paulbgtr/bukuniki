@@ -17,10 +17,14 @@ const NewJournal = () => {
     }));
   };
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <div>
       <Card title="New Journal">
-        <form action="">
+        <form onSubmit={handleSubmit} action="">
           <input
             placeholder="Book's Author"
             className="w-96 border-2 mt-3 mb-3 border-pink-300 focus:outline-none pl-3 rounded-xl py-2"
