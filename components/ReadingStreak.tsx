@@ -12,9 +12,17 @@ const ReadingStreak: FC = () => {
   };
 
   return (
-    <Card textSize="7xl" title="Current Reading Streak">
-      20
-    </Card>
+    <button onClick={() => cardFlip()} className="text-left">
+      {flip ? (
+        <Card id="streak" textSize="7xl" title="Current Reading Streak">
+          History
+        </Card>
+      ) : (
+        <Card id="streak" textSize="7xl" title="Current Reading Streak">
+          20
+        </Card>
+      )}
+    </button>
   );
 };
 
