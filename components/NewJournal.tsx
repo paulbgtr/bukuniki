@@ -24,26 +24,28 @@ const NewJournal = () => {
 
   return (
     <div>
-      <Card title="New Journal">
+      <Card width="w-max" title="New Journal">
         <form onSubmit={handleSubmit} action="">
-          <input
-            placeholder="Book's Author"
-            className="w-96 border-2 mt-3 mb-3 border-pink-300 focus:outline-none pl-3 rounded-xl py-2"
-            type="text"
-            name="author"
-            value={state.author}
-            onChange={handleChange}
-            required
-          />
-          <input
-            placeholder="Book's Title"
-            className="w-96 border-2 border-pink-300 focus:outline-none pl-3 rounded-xl py-2"
-            type="text"
-            name="title"
-            value={state.title}
-            onChange={handleChange}
-            required
-          />
+          <div className="flex-wrap flex justify-center">
+            <input
+              placeholder="Book's Author"
+              className="w-80 border-2 mt-3 mb-3 border-pink-300 focus:outline-none pl-3 rounded-xl py-2"
+              type="text"
+              name="author"
+              value={state.author}
+              onChange={handleChange}
+              required
+            />
+            <input
+              placeholder="Book's Title"
+              className="w-80 border-2 border-pink-300 focus:outline-none pl-3 rounded-xl py-2"
+              type="text"
+              name="title"
+              value={state.title}
+              onChange={handleChange}
+              required
+            />
+          </div>
           <div className="mt-5">
             <AddJournal />
             {state.author && state.title ? <NewJournalNotification /> : null}
