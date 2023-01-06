@@ -24,7 +24,7 @@ const NewJournal = () => {
 
   return (
     <div>
-      <Card width="w-max" title="New Journal">
+      <Card title="New Journal">
         <form onSubmit={handleSubmit} action="">
           <div className="flex-wrap flex justify-center">
             <input
