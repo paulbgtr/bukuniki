@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -14,7 +14,7 @@ export const notify = () =>
     theme: "dark",
   });
 
-const NewJournalNotification = () => {
+const NewJournalNotification: FC = () => {
   return (
     <ToastContainer
       position="bottom-center"

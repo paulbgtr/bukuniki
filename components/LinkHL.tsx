@@ -1,6 +1,5 @@
 // Highlighted link component
-import React from "react";
-import { FC } from "react";
+import React, { FC } from "react";
 import Link from "next/link";
 
 interface Props {

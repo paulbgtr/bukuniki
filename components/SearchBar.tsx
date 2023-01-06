@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const SearchBar = () => {
+const SearchBar: FC = () => {
   return (
     <input
       placeholder="Search for journals..."
