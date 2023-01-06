@@ -1,8 +1,7 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
+import Notification from "./Notification";
 import Card from "./Card";
-import { notify } from "./NewJournalNotification";
-import { useState } from "react";
-import NewJournalNotification from "./NewJournalNotification";
+import { notify } from "../utils/notify";
 
 type AddJournalProps = {
   formFilled: () => boolean;
@@ -12,7 +11,7 @@ type AddJournalProps = {
 const AddJournal: FC<AddJournalProps> = (props) => {
   const handleClick = () => {
     if (props.formFilled()) {
-      notify();
+      notify("Journal Added!");
     }
   };
 
@@ -85,7 +84,7 @@ const NewJournal: FC = () => {
           </div>
           <div className="mt-5">
             <AddJournal formFilled={isFormFilled} />
-            {isFormFilled() ? <NewJournalNotification /> : null}
+            {isFormFilled() ? <Notification /> : null}
           </div>
         </form>
       </Card>
