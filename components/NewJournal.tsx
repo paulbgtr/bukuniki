@@ -1,4 +1,3 @@
-// import AddJournal from './AddJournal';
 import React, { FC } from "react";
 import Card from "./Card";
 import { notify } from "./NewJournalNotification";
@@ -17,14 +16,12 @@ const AddJournal: FC<AddJournalProps> = (props) => {
   };
 
   return (
-    <>
-      <button
-        onClick={handleClick}
-        className="rounded-full bg-pink-300 px-4 pt-1 pb-2 text-3xl text-white hover:opacity-70 duration-300"
-      >
-        +
-      </button>
-    </>
+    <button
+      onClick={handleClick}
+      className="rounded-full bg-pink-300 px-4 pt-1 pb-2 text-3xl text-white hover:opacity-70 duration-300"
+    >
+      +
+    </button>
   );
 };
 
