@@ -17,16 +17,20 @@ const Dashboard = () => {
 
       <Navbar />
       <main>
-        <div className="mt-6 flex justify-center">
-          <SearchBar />
-        </div>
-        {/* Card's text size is in the form of Tailwind's "text-[size]". */}
-        <div className="mt-6 flex gap-8 justify-center">
-          <ReadingStreak />
-          <LatestJournal />
-        </div>
-        <div className="mt-6 flex gap-8 justify-center">
-          <NewJournal />
+        <div className="container mx-auto">
+          <section className="mt-6 flex justify-center">
+            <SearchBar />
+          </section>
+
+          {/* Card's text size is in the form of Tailwind's "text-[size]". */}
+          <section className="mt-6 flex gap-8 justify-center">
+            <ReadingStreak />
+            <LatestJournal />
+          </section>
+
+          <section className="mt-6 flex justify-center">
+            <NewJournal />
+          </section>
         </div>
       </main>
     </>
