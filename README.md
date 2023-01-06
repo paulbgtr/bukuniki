@@ -1,5 +1,7 @@
 # bukuniki
 
+## [FAQ](https://github.com/Gibsol/bukuniki/blob/main/markdown/faq.md)
+
 ## Book Journaling Made Simple
 
 This app should help people to track their reading
