@@ -8,6 +8,7 @@ type AddJournalProps = {
   formFilled: () => boolean;
 };
 
+// This is the "plus sign button" that appears in the NewJournal component.
 const AddJournal: FC<AddJournalProps> = (props) => {
   const handleClick = () => {
     if (props.formFilled()) {
@@ -49,6 +50,13 @@ const NewJournal: FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setTimeout(() => {
+      setState({
+        author: "",
+        title: "",
+      });
+    }, 2000);
   };
 
   return (
