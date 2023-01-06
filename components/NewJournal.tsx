@@ -1,10 +1,34 @@
-import React from "react";
+// import AddJournal from './AddJournal';
+import React, { FC } from "react";
 import Card from "./Card";
-import AddJournal from "./AddJournal";
+import { notify } from "./NewJournalNotification";
 import { useState } from "react";
 import NewJournalNotification from "./NewJournalNotification";
 
-const NewJournal = () => {
+type AddJournalProps = {
+  formFilled: () => boolean;
+};
+
+const AddJournal: FC<AddJournalProps> = (props) => {
+  const handleClick = () => {
+    if (props.formFilled()) {
+      notify();
+    }
+  };
+
+  return (
+    <>
+      <button
+        onClick={handleClick}
+        className="rounded-full bg-pink-300 px-4 pt-1 pb-2 text-3xl text-white hover:opacity-70 duration-300"
+      >
+        +
+      </button>
+    </>
+  );
+};
+
+const NewJournal: FC = () => {
   const [state, setState] = useState({
     author: "",
     title: "",
@@ -16,6 +40,14 @@ const NewJournal = () => {
       ...prevState,
       [name]: value,
     }));
+  };
+
+  const isFormFilled = () => {
+    if (state.author && state.title) {
+      return true;
+    } else {
+      return false;
+    }
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -47,8 +79,8 @@ const NewJournal = () => {
             />
           </div>
           <div className="mt-5">
-            <AddJournal />
-            {state.author && state.title ? <NewJournalNotification /> : null}
+            <AddJournal formFilled={isFormFilled} />
+            {isFormFilled() ? <NewJournalNotification /> : null}
           </div>
         </form>
       </Card>
