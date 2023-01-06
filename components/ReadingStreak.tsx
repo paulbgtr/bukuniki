@@ -13,7 +13,7 @@ const ReadingStreak: FC = () => {
   };
 
   return (
-    <button onClick={() => cardFlip()} className="text-left">
+    <button onClick={cardFlip} className="text-left">
       {flip ? (
         <Card id="streak" textSize="7xl" title="Current Reading Streak">
           History
