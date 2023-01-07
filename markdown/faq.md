@@ -10,7 +10,7 @@ bukuniki is made to fix all these (and even more) problems and **make your readi
 
 ## Is the app free?
 
-Yes, bukuniki is a completely free and open-source web app that is supplied under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+Yes, bukuniki is a completely free and open-source web app that is licensed [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ## How can I support the project?
 
