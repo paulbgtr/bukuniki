@@ -4,7 +4,7 @@ import ReadingStreak from "../components/ReadingStreak";
 import SearchBar from "../components/SearchBar";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Container from "../components/Container";
+import Layout from "../components/Layout";
 
 const Dashboard = () => {
   return (
@@ -18,7 +18,7 @@ const Dashboard = () => {
 
       <Navbar />
       <main>
-        <Container>
+        <Layout>
           <section className="mt-6 flex justify-center">
             <SearchBar />
           </section>
@@ -32,7 +32,7 @@ const Dashboard = () => {
           <section className="mt-6 flex justify-center">
             <NewJournal />
           </section>
-        </Container>
+        </Layout>
       </main>
     </>
   );

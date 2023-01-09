@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Button from "../components/Button";
 import Text from "../components/Text";
-import Container from "../components/Container";
+import Layout from "../components/Layout";
 
 const Home = () => {
   const router = useRouter();
@@ -17,7 +17,7 @@ const Home = () => {
       </Head>
 
       <main>
-        <Container>
+        <Layout>
           <h1 className="text-7xl font-bold w-3 mb-6">
             Book journaling made simple.
           </h1>
@@ -33,7 +33,7 @@ const Home = () => {
           >
             Star on Github ★
           </Button>
-        </Container>
+        </Layout>
       </main>
     </>
   );
