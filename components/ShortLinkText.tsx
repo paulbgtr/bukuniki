@@ -9,7 +9,10 @@ type Props = {
 
 const ShortLinkText: FC<Props> = (props) => {
   return (
-    <Link href={props.href} className="underline text-zinc-400 text-sm">
+    <Link
+      href={props.href}
+      className={`${props.className} italic text-zinc-400 text-sm`}
+    >
       {props.children}
     </Link>
   );
