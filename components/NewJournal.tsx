@@ -55,7 +55,7 @@ const NewJournal: FC = () => {
         author: "",
         title: "",
       });
-    }, 2000);
+    }, 2100);
   };
 
   return (
