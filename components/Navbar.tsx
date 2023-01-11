@@ -64,10 +64,7 @@ const Navbar: FC = () => {
                 <Link href="/my-journals">My Journals</Link>
               </li>
               <li className="text-white hover:opacity-50 duration-300">
-                <Link href="/coming">Help</Link>
-              </li>
-              <li className="text-white hover:opacity-50 duration-300">
-                <Link href="/about">About</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
