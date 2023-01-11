@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Button from "../components/Button";
+import Button from "../components/Buttons/Button";
 import Text from "../components/Text";
 import Layout from "../components/Layout";
 

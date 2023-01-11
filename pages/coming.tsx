@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Text from "../components/Text";
-import LinkHL from "../components/LinkHL";
+import LinkHL from "../components/Links/LinkHL";
 
 const ComingSoon = () => {
   return (

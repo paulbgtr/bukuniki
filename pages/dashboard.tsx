@@ -1,9 +1,8 @@
-import NewJournal from "../components/NewJournal";
-import LatestJournal from "../components/LatestJournal";
-import ReadingStreak from "../components/ReadingStreak";
-import SearchBar from "../components/SearchBar";
+import NewJournal from "../pageComponents/dashboard/NewJournal";
+import LatestJournal from "../pageComponents/dashboard/LatestJournal";
+import ReadingStreak from "../pageComponents/dashboard/ReadingStreak";
+import SearchBar from "../pageComponents/dashboard/SearchBar";
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 import Layout from "../components/Layout";
 
 const Dashboard = () => {
@@ -16,7 +15,6 @@ const Dashboard = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
       <main>
         <Layout>
           <section className="mt-6 flex justify-center">

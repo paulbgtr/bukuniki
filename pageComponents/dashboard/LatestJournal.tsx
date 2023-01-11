@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Card from "./Card";
+import Card from "../../components/Card";
 import { useRouter } from "next/router";
 
 const LatestJournal: FC = () => {

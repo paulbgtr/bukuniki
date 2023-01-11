@@ -1,5 +1,5 @@
 import Head from "next/head";
-import LinkHL from "../components/LinkHL";
+import LinkHL from "../components/Links/LinkHL";
 import Text from "../components/Text";
 
 const NotFoundPage = () => {

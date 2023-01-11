@@ -11,7 +11,7 @@ const ShortLinkText: FC<Props> = (props) => {
   return (
     <Link
       href={props.href}
-      className={`${props.className} italic text-zinc-400 text-sm`}
+      className={`${props.className} italic text-zinc-400 hover:opacity-70 duration-200 text-sm`}
     >
       {props.children}
     </Link>

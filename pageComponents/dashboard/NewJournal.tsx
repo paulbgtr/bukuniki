@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
-import Notification from "./Notification";
-import Card from "./Card";
-import { notify } from "../utils/notify";
+import Notification from "../../components/Notification";
+import Card from "../../components/Card";
+import { notify } from "../../utils/notify";
 
 type AddJournalProps = {
   formFilled: () => boolean;

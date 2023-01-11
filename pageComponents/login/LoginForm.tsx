@@ -1,8 +1,8 @@
 // todo implement email validation
 
 import React, { useState, FC } from "react";
-import Button from "./Button";
-import ShortLinkText from "../components/ShortLinkText";
+import Button from "../../components/Buttons/Button";
+import ShortLinkText from "../../components/Links/ShortLinkText";
 
 const LoginForm: FC = () => {
   const [state, setState] = useState({

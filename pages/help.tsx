@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Text from "../components/Text";
-import LinkHL from "../components/LinkHL";
+import LinkHL from "../components/Links/LinkHL";
 
 const Help: FC = () => {
   return (

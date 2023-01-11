@@ -1,6 +1,6 @@
 import React, { useState, FC } from "react";
-import Button from "./Button";
-import ShortLinkText from "../components/ShortLinkText";
+import Button from "../../components/Buttons/Button";
+import ShortLinkText from "../../components/Links/ShortLinkText";
 
 const SignUpForm: FC = () => {
   const [state, setState] = useState({
