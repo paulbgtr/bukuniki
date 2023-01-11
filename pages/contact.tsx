@@ -1,10 +1,9 @@
-import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Text from "../components/Text";
 import LinkHL from "../components/Links/LinkHL";
 
-const Help = () => {
+const Contact = () => {
   return (
     <>
       <Head>
@@ -62,4 +61,4 @@ const Help = () => {
   );
 };
 
-export default Help;
+export default Contact;
