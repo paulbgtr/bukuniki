@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 import Layout from "../components/Layout";
-import LoginForm from "../components/LoginForm";
+import LoginForm from "../pageComponents/login/LoginForm";
 
 const Login = () => {
   return (
@@ -13,9 +12,8 @@ const Login = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
       <main>
-        <Layout className="flex justify-center">
+        <Layout className="flex flex-wrap justify-center">
           <LoginForm />
         </Layout>
       </main>
