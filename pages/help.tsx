@@ -1,10 +1,10 @@
-import React, { FC } from "react";
+import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Text from "../components/Text";
 import LinkHL from "../components/Links/LinkHL";
 
-const Help: FC = () => {
+const Help = () => {
   return (
     <>
       <Head>
@@ -17,7 +17,7 @@ const Help: FC = () => {
       <main>
         <Layout className="w-9/12">
           <section>
-            <h1 className="text-5xl mb-2">bukuniki Help</h1>
+            <h1 className="text-4xl mb-2">Contact bukuniki</h1>
             <Text>
               There might be a bug or an issue that you have encountered here,
               and we would be very happy to help you with that. There are
