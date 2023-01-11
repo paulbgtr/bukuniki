@@ -23,17 +23,18 @@ const Contact = () => {
               several ways how you can reach help at bukuniki:
             </Text>
             <ul>
-              <li>
-                By trying to find the same Issue on our{" "}
+              <li className="text-lg">
+                - By trying to find the same Issue on our{" "}
                 <LinkHL href="https://github.com/gibsol/bukuniki">
                   Github
                 </LinkHL>{" "}
               </li>
-              <li>
-                By submitting a new Issue. In that case, we encourage you to
+              <li className="text-lg">
+                - By submitting a new Issue. In that case, we encourage you to
                 check our{" "}
                 {/* todo: add a link to the contribution guide when it's gonna be written */}
-                <LinkHL href="">CONTRIBUTION.md</LinkHL>
+                <LinkHL href="">CONTRIBUTION.md</LinkHL> before submitting a new
+                issue.
               </li>
             </ul>
           </section>
