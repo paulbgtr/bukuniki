@@ -16,7 +16,7 @@ const Contact = () => {
       <main>
         <Layout className="w-9/12">
           <section>
-            <h1 className="text-4xl mb-2">Contact bukuniki</h1>
+            <h1 className="text-4xl mb-2 font-bold">Contact bukuniki</h1>
             <Text>
               There might be a bug or an issue that you have encountered here,
               and we would be very happy to help you with that. There are
@@ -39,8 +39,8 @@ const Contact = () => {
             </ul>
           </section>
 
-          <section className="mb-3 mt-3">
-            <h2 className="text-2xl mb-2">
+          <section className="mb-3 mt-3 ">
+            <h2 className="text-2xl mb-2 font-bold">
               What If I do not have a Github account?
             </h2>
             <Text>
