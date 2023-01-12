@@ -8,9 +8,9 @@ type AddJournalProps = {
 };
 
 // This is the "plus sign button" that appears in the NewJournal component.
-const AddJournal: FC<AddJournalProps> = (props) => {
+const AddJournal: FC<AddJournalProps> = ({ formFilled }) => {
   const handleClick = () => {
-    if (props.formFilled()) {
+    if (formFilled()) {
       notify("Journal Added!");
     }
   };
