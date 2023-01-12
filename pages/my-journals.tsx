@@ -1,3 +1,4 @@
+// todo: a functionality to actually add journals on this page
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Journal from "../pageComponents/my-journals/Journal";
