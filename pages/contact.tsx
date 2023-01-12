@@ -39,7 +39,7 @@ const Contact = () => {
             </ul>
           </section>
 
-          <section className="mt-3">
+          <section className="mb-3 mt-3">
             <h2 className="text-2xl mb-2">
               What If I do not have a Github account?
             </h2>
