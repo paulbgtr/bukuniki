@@ -60,9 +60,9 @@ const Contact = () => {
             </Text>
           </section>
 
-          <section className="mt-10 flex justify-center">
+          {/* <section className="mt-10 flex justify-center">
             <ContactForm />
-          </section>
+          </section> */}
         </Layout>
       </main>
     </>
