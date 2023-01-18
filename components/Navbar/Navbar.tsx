@@ -1,8 +1,7 @@
-// todo: user icon and dropdown menu
-
 import React, { FC } from "react";
 import { useState } from "react";
 import Link from "next/link";
+import ProfileImage from "./ProfileImage";
 
 const Navbar: FC = () => {
   const [navbar, setNavbar] = useState(false);
@@ -66,6 +65,7 @@ const Navbar: FC = () => {
               <li className="text-white hover:opacity-50 duration-300">
                 <Link href="/contact">Contact</Link>
               </li>
+              <ProfileImage />
             </ul>
           </div>
         </div>
@@ -73,4 +73,5 @@ const Navbar: FC = () => {
     </nav>
   );
 };
+
 export default Navbar;
