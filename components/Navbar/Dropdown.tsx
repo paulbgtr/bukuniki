@@ -10,7 +10,7 @@ import React, { FC } from "react";
 const Dropdown: FC = () => {
   return (
     <div className="absolute right-5 top-3 w-48 mt-2 origin-top-right divide-y rounded-xl shadow-lg outline-none">
-      <div className="px-4 py-3">
+      <div className="hover:cursor-default px-4 py-3">
         <p className="text-sm text-gray-400">Signed in as</p>
         <p className="text-sm font-medium text-white truncate">Username</p>
       </div>
