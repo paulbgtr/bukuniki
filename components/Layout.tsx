@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 import { useRouter } from "next/router";
 
 type Props = {
