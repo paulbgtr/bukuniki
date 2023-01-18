@@ -3,11 +3,11 @@
 // todo: when clicked everywhere except the dropdown, the dropdown should close
 
 // todo: basic functionality:
-// - forward to the profile page
 // - forward to the settings page
 // - sign out
 
 import React, { FC } from "react";
+import Link from "next/link";
 
 const Dropdown: FC = () => {
   return (
@@ -17,24 +17,18 @@ const Dropdown: FC = () => {
         <p className="text-sm font-medium text-white truncate">Username</p>
       </div>
       <div className="py-1">
-        <a
-          href="#"
-          className="block px-4 py-2 text-sm duration-200 text-white hover:bg-gray-100 hover:text-gray-900"
-        >
-          Your Profile
-        </a>
-        <a
-          href="#"
+        <Link
+          href="/settings"
           className="block px-4 py-2 text-sm duration-200 text-white hover:bg-gray-100 hover:text-gray-900"
         >
           Settings
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          href="/login"
           className="block px-4 py-2 text-sm duration-200 text-white hover:bg-gray-100 hover:text-gray-900"
         >
           Sign out
-        </a>
+        </Link>
       </div>
     </div>
   );
