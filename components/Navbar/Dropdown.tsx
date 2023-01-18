@@ -1,5 +1,7 @@
 // A simple dropdown component that is called from the ProfileImage component.
 
+// todo: when clicked everywhere except the dropdown, the dropdown should close
+
 // todo: basic functionality:
 // - forward to the profile page
 // - forward to the settings page
