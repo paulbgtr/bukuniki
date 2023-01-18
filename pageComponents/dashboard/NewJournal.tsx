@@ -86,7 +86,7 @@ const NewJournal: FC = () => {
             <AddJournal formFilled={isFormFilled} />
           </div>
         </form>
-        {isFormFilled() ? <Notification /> : null}
+        {isFormFilled() && <Notification />}
       </Card>
     </div>
   );
