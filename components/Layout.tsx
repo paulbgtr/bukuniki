@@ -20,7 +20,7 @@ const Layout: FC<Props> = (props) => {
         <Navbar />
       )}
 
-      <div className={`${props.className} container md:my-16 mx-auto`}>
+      <div className={`${props.className} container md:my-12 mx-auto`}>
         {props.children}
       </div>
     </>
