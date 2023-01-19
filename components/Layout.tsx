@@ -6,6 +6,7 @@ import { useState } from "react";
 type Props = {
   children: React.ReactNode;
   className?: string;
+  centered?: boolean;
 };
 
 const Layout: FC<Props> = (props) => {
@@ -20,7 +21,11 @@ const Layout: FC<Props> = (props) => {
         <Navbar />
       )}
 
-      <div className={`${props.className} container md:my-12 mx-auto`}>
+      <div
+        className={`${props.className} ${
+          props.centered ? "grid justify-items-center" : ""
+        } container md:my-12 mx-auto`}
+      >
         {props.children}
       </div>
     </>
