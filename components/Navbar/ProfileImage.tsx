@@ -18,7 +18,7 @@ const ProfileImage: FC = () => {
       <Image
         alt="User Profile image"
         src={profileImage}
-        className="border border-pink-200 rounded-full"
+        className="border-2 border-pink-200 rounded-full"
       />
     </button>
   );
