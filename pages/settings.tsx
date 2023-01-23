@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import SettingsContaier from "../pageComponents/settings/SettingsContainer";
-import Username from "../pageComponents/settings/Usename";
+import Username from "../pageComponents/settings/Username";
+import Email from "../pageComponents/settings/Email";
+import Divider from "../components/Divider";
 
 const Settings = () => {
   return (
@@ -18,6 +20,8 @@ const Settings = () => {
           <h1 className="text-3xl font-bold text-center">Settings</h1>
           <SettingsContaier header="Account Settings">
             <Username />
+            <Divider />
+            <Email />
           </SettingsContaier>
         </Layout>
       </main>
