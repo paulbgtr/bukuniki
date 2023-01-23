@@ -1,12 +1,11 @@
 // todo: add state management and form validation
 
 import React, { FC } from "react";
-import Button from "../../components/Buttons/Button";
 
 const Username: FC = () => {
   return (
-    <section>
-      <h5 className="text-lg">Username</h5>
+    <section className="mt-3">
+      <h5 className="text-lg font-bold">Username</h5>
       <p>
         You can change your username only every thirty days. Your username must
         be alphanumeric and between 3 and 20 characters.
@@ -15,10 +14,12 @@ const Username: FC = () => {
         <div className="inline-flex flex-col">
           <input
             type="text"
-            className="mt-3 mb-3 bg-white rounded-xl p-2"
+            className="mt-3 mb-3 text-black bg-white rounded-xl p-2"
             placeholder="New Username"
           />
-          <Button>Update Username</Button>
+          <button className="p-2 border border-pink-300 hover:opacity-75 rounded-lg">
+            Update Username
+          </button>
         </div>
       </form>
     </section>
