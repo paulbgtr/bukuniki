@@ -25,11 +25,16 @@ const Home = () => {
             Bukuniki is a web-based reading journal that will help you develop
             your reading habits and store all of your records on a book.
           </Text>
-          <Button onclick={() => router.push("/coming")} className="mr-3">
+          <Button
+            onclick={() => router.push("/coming")}
+            className="mr-3 text-xl"
+          >
             Get started, It is free!
           </Button>
           <Button
+            variant="outlined"
             onclick={() => router.replace("https://github.com/gibsol/bukuniki")}
+            className="text-xl"
           >
             Star on Github ★
           </Button>
