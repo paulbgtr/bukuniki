@@ -17,14 +17,16 @@ const Dashboard = () => {
 
       <main>
         <Layout className="gap-3" centered>
-          <SearchBar />
+          <div className="flex-col max-w-xl justify-center">
+            <SearchBar />
 
-          <section className="mt-6 gap-3 flex">
-            <ReadingStreak />
-            <LatestJournal />
-          </section>
+            <section className="mt-6 gap-3 flex">
+              <ReadingStreak />
+              <LatestJournal />
+            </section>
 
-          <NewJournal />
+            <NewJournal />
+          </div>
         </Layout>
       </main>
     </>
