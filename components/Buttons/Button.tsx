@@ -4,7 +4,7 @@ interface Props {
   children: React.ReactNode;
   className?: string;
   onclick?: () => void;
-  variant?: "outlined" | "filled";
+  variant?: "outlined" | "filled" | "danger";
 }
 
 const Button: FC<Props> = (props) => {
@@ -14,6 +14,10 @@ const Button: FC<Props> = (props) => {
     case "outlined":
       classes =
         "duration-300 py-3 px-5 rounded-xl border-2 border-pink-300 font-bold text-sm hover:opacity-70 bg-white-300";
+      break;
+    case "danger":
+      classes =
+        "duration-300 py-3 px-5 rounded-xl border-2 border-red-500 font-bold text-sm hover:opacity-70 bg-red-500";
       break;
     default:
       classes =
