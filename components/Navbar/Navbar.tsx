@@ -1,7 +1,9 @@
+// todo: make navbar's user settings responsive
 import React, { FC } from "react";
 import { useState } from "react";
 import Link from "next/link";
 import ProfileImage from "./ProfileImage";
+import Divider from "../Divider";
 
 const Navbar: FC = () => {
   const [navbar, setNavbar] = useState(false);
@@ -21,7 +23,6 @@ const Navbar: FC = () => {
               >
                 {navbar ? (
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6 text-white"
                     viewBox="0 0 20 20"
                     fill="currentColor"
@@ -34,7 +35,6 @@ const Navbar: FC = () => {
                   </svg>
                 ) : (
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -65,6 +65,15 @@ const Navbar: FC = () => {
               <li className="text-white hover:opacity-50 duration-300">
                 <Link href="/contact">Contact</Link>
               </li>
+              <Divider />
+              <div className="flex flex-col gap-5 md:hidden">
+                <li className="text-white hover:opacity-50 duration-300">
+                  <Link href="/my-journals">Settings</Link>
+                </li>
+                <li className="text-white hover:opacity-50 duration-300">
+                  <Link href="/contact">Sign Out</Link>
+                </li>
+              </div>
               <ProfileImage />
             </ul>
           </div>
