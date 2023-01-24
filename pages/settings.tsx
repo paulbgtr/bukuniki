@@ -1,8 +1,12 @@
+// todo: add state management and validation for forms
+
 import Head from "next/head";
 import Layout from "../components/Layout";
 import SettingsContaier from "../pageComponents/settings/SettingsContainer";
 import Username from "../pageComponents/settings/Username";
 import Email from "../pageComponents/settings/Email";
+import Password from "../pageComponents/settings/Password";
+import Delete from "../pageComponents/settings/Delete";
 import Divider from "../components/Divider";
 
 const Settings = () => {
@@ -22,6 +26,10 @@ const Settings = () => {
             <Username />
             <Divider />
             <Email />
+            <Divider />
+            <Password />
+            <Divider />
+            <Delete />
           </SettingsContaier>
         </Layout>
       </main>
