@@ -65,7 +65,7 @@ const Navbar: FC = () => {
               <li className="text-white hover:opacity-50 duration-300">
                 <Link href="/contact">Contact</Link>
               </li>
-              <Divider />
+              <Divider className="md:hidden" />
               <div className="flex flex-col gap-5 md:hidden">
                 <li className="text-white hover:opacity-50 duration-300">
                   <Link href="/my-journals">Settings</Link>

@@ -1,7 +1,11 @@
 import React, { FC } from "react";
 
-const Divider: FC = () => {
-  return <hr className="my-5" />;
+type Props = {
+  className?: string;
+};
+
+const Divider: FC<Props> = ({ className }) => {
+  return <hr className={`${className} my-5`} />;
 };
 
 export default Divider;
