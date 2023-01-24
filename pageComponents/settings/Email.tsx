@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Button from "../../components/Buttons/Button";
 
 const Email: FC = () => {
   return (
@@ -17,9 +18,7 @@ const Email: FC = () => {
             className="mt-3 mb-3 bg-white rounded-xl text-black p-2"
             placeholder="Password"
           />
-          <button className="p-2 border border-pink-300 hover:opacity-75 rounded-lg">
-            Update Username
-          </button>
+          <Button variant="outlined">Update Email</Button>
         </div>
       </form>
     </section>

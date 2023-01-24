@@ -1,6 +1,5 @@
-// todo: add state management and form validation
-
 import React, { FC } from "react";
+import Button from "../../components/Buttons/Button";
 
 const Username: FC = () => {
   return (
@@ -17,9 +16,8 @@ const Username: FC = () => {
             className="mt-3 mb-3 text-black bg-white rounded-xl p-2"
             placeholder="New Username"
           />
-          <button className="p-2 border border-pink-300 hover:opacity-75 rounded-lg">
-            Update Username
-          </button>
+
+          <Button variant="outlined">Update Username</Button>
         </div>
       </form>
     </section>
