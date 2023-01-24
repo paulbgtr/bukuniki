@@ -23,7 +23,7 @@ const Layout: FC<Props> = (props) => {
 
       <div
         className={`${props.className} ${props.centered &&
-          "grid justify-items-center"} container my-12 mx-auto`}
+          "grid justify-items-center"} container my-8 mx-auto`}
       >
         {props.children}
       </div>
