@@ -12,13 +12,13 @@ const ProfileImage: FC = () => {
   return (
     <button
       onClick={() => setDropdown(!dropdown)}
-      className="relative w-10 h-10"
+      className="hidden md:block relative w-10 h-10"
     >
       {dropdown ? <Dropdown /> : null}
       <Image
         alt="User Profile image"
         src={profileImage}
-        className="border-2 border-pink-200 rounded-full"
+        className="border-2 border-pink-300 rounded-full"
       />
     </button>
   );
