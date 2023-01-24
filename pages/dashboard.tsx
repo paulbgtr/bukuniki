@@ -16,20 +16,15 @@ const Dashboard = () => {
       </Head>
 
       <main>
-        <Layout>
-          <section className="mt-6 flex justify-center">
-            <SearchBar />
-          </section>
+        <Layout className="gap-3" centered>
+          <SearchBar />
 
-          {/* Card's text size is in the form of Tailwind's "text-[size]". */}
-          <section className="mt-6 flex gap-8 justify-center">
+          <section className="mt-6 gap-3 flex">
             <ReadingStreak />
             <LatestJournal />
           </section>
 
-          <section className="mt-6 flex justify-center">
-            <NewJournal />
-          </section>
+          <NewJournal />
         </Layout>
       </main>
     </>
