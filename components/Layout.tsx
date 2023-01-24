@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import Navbar from "./Navbar/Navbar";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Footer from "./Footer";
 
 type Props = {
   children: React.ReactNode;
@@ -11,7 +12,6 @@ type Props = {
 
 const Layout: FC<Props> = (props) => {
   const { asPath } = useRouter();
-  const [rightPath, setRightPath] = useState(false);
 
   return (
     <>
