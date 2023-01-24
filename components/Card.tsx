@@ -12,7 +12,7 @@ interface Props {
 
 const Card: FC<Props> = (props) => {
   return (
-    <div id={props.id} className="block max-w-sm p-6 rounded-lg shadow-xl">
+    <div id={props.id} className="block p-6 rounded-lg shadow-xl">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-pink-300">
         {props.title}
       </h5>
