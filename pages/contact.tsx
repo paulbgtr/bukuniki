@@ -44,7 +44,7 @@ const Contact = () => {
 
           <section className="mb-3 mt-5">
             <h2 className="text-2xl text-pink-300 mb-2 font-bold">
-              What If I do not have a Github account?
+              What If I do not have a GitHub account?
             </h2>
             <Text>
               Well, In that case you would probably want to connect us directly
@@ -52,9 +52,10 @@ const Contact = () => {
               added in future updates.
             </Text>
             <Text>
-              You can follow the development process on our{" "}
+              While not having a GitHub account, you can follow the development
+              process on our{" "}
               <LinkHL href="https://github.com/gibsol/bukuniki">
-                Github page
+                GitHub page
               </LinkHL>
               .
             </Text>

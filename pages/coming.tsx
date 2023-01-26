@@ -19,7 +19,7 @@ const ComingSoon = () => {
             Bukuniki is currently under active development. <br />
             You can follow the development process on our{" "}
             <LinkHL href="https://github.com/gibsol/bukuniki">
-              Github page
+              GitHub page
             </LinkHL>
             .
           </Text>
