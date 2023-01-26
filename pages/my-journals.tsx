@@ -16,7 +16,9 @@ const MyJournals = () => {
 
       <main>
         <Layout>
-          <h1 className="text-4xl text-center mb-2 font-bold">My Journals</h1>
+          <h1 className="text-4xl text-center mb-2 text-pink-300 font-bold">
+            My Journals
+          </h1>
           <JournalContainer>
             <Journal href="" title="Anna Karenina" author="Leo Tolstoy" />
             <Journal href="" title="Anna Karenina" author="Leo Tolstoy" />

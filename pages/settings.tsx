@@ -21,7 +21,9 @@ const Settings = () => {
 
       <main>
         <Layout centered>
-          <h1 className="text-3xl font-bold text-center">Settings</h1>
+          <h1 className="text-4xl text-pink-300 font-bold text-center">
+            Settings
+          </h1>
           <SettingsContaier header="Account Settings">
             <Username />
             <Divider />
