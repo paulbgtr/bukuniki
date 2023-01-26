@@ -1,4 +1,4 @@
-// todo: a functionality to actually add journals on this page
+// todo: Add forward to an edit page of a journal
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Journal from "../pageComponents/my-journals/Journal";
