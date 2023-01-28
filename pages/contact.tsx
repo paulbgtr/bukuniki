@@ -17,7 +17,7 @@ const Contact = () => {
       <main>
         <Layout className="w-9/12">
           <section>
-            <h1 className="text-4xl text-pink-300 mb-2 font-bold">
+            <h1 className="text-4xl text-center mb-5 text-white-300 font-bold">
               Contact bukuniki
             </h1>
             <Text>

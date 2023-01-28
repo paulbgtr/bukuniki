@@ -16,7 +16,7 @@ const MyJournals = () => {
 
       <main>
         <Layout>
-          <h1 className="text-4xl text-center mb-2 text-pink-300 font-bold">
+          <h1 className="text-4xl text-center mb-2 text-white-300 font-bold">
             My Journals
           </h1>
           <JournalContainer>
