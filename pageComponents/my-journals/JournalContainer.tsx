@@ -7,7 +7,7 @@ type Props = {
 
 const JournalContainer: FC<Props> = (props) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-5 justify-items-center mt-6">
+    <div className="grid grid-cols-3 md:grid-cols-4 gap-5 md:justify-items-center mt-6">
       {props.children}
     </div>
   );
