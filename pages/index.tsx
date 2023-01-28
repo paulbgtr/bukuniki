@@ -17,7 +17,7 @@ const Home = () => {
       </Head>
 
       <main>
-        <Layout>
+        <Layout className="mt-20">
           <h1 className="text-7xl font-bold w-3 mb-6">
             Book journaling made simple.
           </h1>
@@ -34,7 +34,6 @@ const Home = () => {
           <Button
             variant="outlined"
             onclick={() => router.replace("https://github.com/gibsol/bukuniki")}
-            className="text-xl"
           >
             Star on Github ★
           </Button>
