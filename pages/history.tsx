@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Layout from "../components/Layout";
 
 const History = () => {
   return (
@@ -10,7 +11,13 @@ const History = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main></main>
+      <main>
+        <Layout>
+          <h1 className="text-4xl text-center mb-2 text-white-300 font-bold">
+            My Reading History
+          </h1>
+        </Layout>
+      </main>
     </>
   );
 };
