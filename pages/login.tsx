@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import Layout from "../components/Layout";
 import LoginForm from "../pageComponents/login/LoginForm";
 

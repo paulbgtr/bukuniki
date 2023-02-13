@@ -2,6 +2,7 @@
 
 // todo: a confirmation form on the screen that will ask the user to confirm the deletion of their account.
 import React, { FC } from "react";
+
 import Button from "../../components/Buttons/Button";
 
 const Delete: FC = () => {

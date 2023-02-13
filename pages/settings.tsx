@@ -1,13 +1,14 @@
 // todo: add state management and validation for forms
 
 import Head from "next/head";
+
+import Divider from "../components/Divider";
 import Layout from "../components/Layout";
-import SettingsContaier from "../pageComponents/settings/SettingsContainer";
-import Username from "../pageComponents/settings/Username";
+import Delete from "../pageComponents/settings/Delete";
 import Email from "../pageComponents/settings/Email";
 import Password from "../pageComponents/settings/Password";
-import Delete from "../pageComponents/settings/Delete";
-import Divider from "../components/Divider";
+import SettingsContaier from "../pageComponents/settings/SettingsContainer";
+import Username from "../pageComponents/settings/Username";
 
 const Settings = () => {
   return (
@@ -21,7 +22,7 @@ const Settings = () => {
 
       <main>
         <Layout centered>
-          <h1 className="text-4xl text-pink-300 font-bold text-center">
+          <h1 className="text-4xl font-bold text-center text-pink-300">
             Settings
           </h1>
           <SettingsContaier header="Account Settings">
