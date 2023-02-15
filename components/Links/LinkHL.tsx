@@ -1,5 +1,5 @@
 // Highlighted link component
-import React, { FC } from "react";
+import React from "react";
 import Link from "next/link";
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
   className?: string;
 }
 
-const LinkHL: FC<Props> = (props) => {
+const LinkHL = (props: Props) => {
   return (
     <Link
       className={`${props.className} text-lg text-pink-300 no-underline font-bold duration-300 hover:text-white`}

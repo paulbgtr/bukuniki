@@ -1,14 +1,14 @@
 // a container component for all of the journal components on the page
-import React, { FC } from "react";
+import React from "react";
 
 type Props = {
   children: React.ReactNode;
 };
 
-const JournalContainer: FC<Props> = (props) => {
+const JournalContainer = ({ children }: Props) => {
   return (
-    <div className="grid grid-cols-3 md:grid-cols-4 gap-5 md:justify-items-center mt-6">
-      {props.children}
+    <div className="grid grid-cols-3 gap-5 mt-6 md:grid-cols-4 md:justify-items-center">
+      {children}
     </div>
   );
 };

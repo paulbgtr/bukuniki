@@ -1,11 +1,11 @@
 // this component is a form that will be used to delete the user's account.
 
 // todo: a confirmation form on the screen that will ask the user to confirm the deletion of their account.
-import React, { FC } from "react";
+import React from "react";
 
 import Button from "../../components/Buttons/Button";
 
-const Delete: FC = () => {
+const Delete = () => {
   return (
     <div>
       <h5 className="text-lg font-bold">Delete Account</h5>

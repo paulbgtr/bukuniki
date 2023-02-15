@@ -6,26 +6,26 @@
 // - forward to the settings page
 // - sign out
 
-import React, { FC } from "react";
+import React from "react";
 import Link from "next/link";
 
-const Dropdown: FC = () => {
+const Dropdown = () => {
   return (
-    <div className="absolute right-5 top-3 w-48 mt-2 origin-top-right divide-y rounded-xl shadow-lg outline-none">
-      <div className="hover:cursor-default px-4 py-3">
+    <div className="absolute w-48 mt-2 origin-top-right divide-y shadow-lg outline-none right-5 top-3 rounded-xl">
+      <div className="px-4 py-3 hover:cursor-default">
         <p className="text-sm text-gray-400">Signed in as</p>
         <p className="text-sm font-medium text-white truncate">Username</p>
       </div>
       <div className="py-1">
         <Link
           href="/settings"
-          className="block px-4 py-2 text-sm duration-200 text-white hover:bg-gray-100 hover:text-gray-900"
+          className="block px-4 py-2 text-sm text-white duration-200 hover:bg-gray-100 hover:text-gray-900"
         >
           Settings
         </Link>
         <Link
           href="/login"
-          className="block px-4 py-2 text-sm duration-200 text-white hover:bg-gray-100 hover:text-gray-900"
+          className="block px-4 py-2 text-sm text-white duration-200 hover:bg-gray-100 hover:text-gray-900"
         >
           Sign out
         </Link>

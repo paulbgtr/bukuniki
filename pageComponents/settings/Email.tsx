@@ -1,7 +1,8 @@
-import React, { FC } from "react";
+import React from "react";
+
 import Button from "../../components/Buttons/Button";
 
-const Email: FC = () => {
+const Email = () => {
   return (
     <section>
       <h5 className="text-lg font-bold">Email</h5>
@@ -10,12 +11,12 @@ const Email: FC = () => {
         <div className="inline-flex flex-col">
           <input
             type="text"
-            className="mt-3 mb-3 bg-white rounded-xl text-black p-2"
+            className="p-2 mt-3 mb-3 text-black bg-white rounded-xl"
             placeholder="New Username"
           />
           <input
             type="password"
-            className="mt-3 mb-3 bg-white rounded-xl text-black p-2"
+            className="p-2 mt-3 mb-3 text-black bg-white rounded-xl"
             placeholder="Password"
           />
           <Button variant="outlined">Update Email</Button>

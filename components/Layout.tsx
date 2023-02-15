@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import Navbar from "./Navbar/Navbar";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -10,7 +10,7 @@ type Props = {
   centered?: boolean;
 };
 
-const Layout: FC<Props> = (props) => {
+const Layout = (props: Props) => {
   const { asPath } = useRouter();
 
   return (

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 
 interface Props {
   children: React.ReactNode;
@@ -7,7 +7,7 @@ interface Props {
   variant?: "outlined" | "filled" | "danger";
 }
 
-const Button: FC<Props> = (props) => {
+const Button = (props: Props) => {
   let classes = "";
 
   switch (props.variant) {

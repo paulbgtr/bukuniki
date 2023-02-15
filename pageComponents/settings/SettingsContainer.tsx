@@ -1,16 +1,16 @@
 // A container for different kind of settings (e.g. account, app, etc.)
 
-import React, { FC } from "react";
+import React from "react";
 
 type Props = {
   header: string;
   children: React.ReactNode;
 };
 
-const SettingsContaier: FC<Props> = ({ children, header }) => {
+const SettingsContaier = ({ children, header }: Props) => {
   return (
-    <div className="rounded-xl shadow-xl p-10 md:w-1/2">
-      <h2 className="font-bold text-2xl">{header}</h2> {children}
+    <div className="p-10 shadow-xl rounded-xl md:w-1/2">
+      <h2 className="text-2xl font-bold">{header}</h2> {children}
     </div>
   );
 };

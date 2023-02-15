@@ -1,7 +1,8 @@
-import React, { FC } from "react";
+import React from "react";
+
 import Button from "../../components/Buttons/Button";
 
-const Username: FC = () => {
+const Username = () => {
   return (
     <section className="mt-3">
       <h5 className="text-lg font-bold">Username</h5>
@@ -13,7 +14,7 @@ const Username: FC = () => {
         <div className="inline-flex flex-col">
           <input
             type="text"
-            className="mt-3 mb-3 text-black bg-white rounded-xl p-2"
+            className="p-2 mt-3 mb-3 text-black bg-white rounded-xl"
             placeholder="New Username"
           />
 

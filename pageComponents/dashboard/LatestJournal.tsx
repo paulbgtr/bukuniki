@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
-import React, { FC } from "react";
+import React from "react";
 
 import Card from "../../components/Card";
 
-const LatestJournal: FC = () => {
+const LatestJournal = () => {
   const router = useRouter();
 
   return (

@@ -1,8 +1,9 @@
-import React, { useState, FC } from "react";
+import React, { useState } from "react";
+
 import Button from "../../components/Buttons/Button";
 import ShortLinkText from "../../components/Links/ShortLinkText";
 
-const SignUpForm: FC = () => {
+const SignUpForm = () => {
   const [state, setState] = useState({
     email: "",
     username: "",
@@ -19,14 +20,14 @@ const SignUpForm: FC = () => {
 
   return (
     <>
-      <div className="shadow-2xl rounded-xl flex justify-center w-2/5">
-        <form className="flex justify-center flex-col mb-5 mt-5" action="">
-          <h1 className="text-lg text-center font-bold mb-3">
+      <div className="flex justify-center w-2/5 shadow-2xl rounded-xl">
+        <form className="flex flex-col justify-center mt-5 mb-5" action="">
+          <h1 className="mb-3 text-lg font-bold text-center">
             Sign Up to bukuniki
           </h1>
           <input
             placeholder="Email"
-            className="w-80 border-2 mt-3 mb-3 border-pink-300 focus:outline-none pl-3 rounded-xl py-2"
+            className="py-2 pl-3 mt-3 mb-3 border-2 border-pink-300 w-80 focus:outline-none rounded-xl"
             type="email"
             value={state.email}
             onChange={handleChange}
@@ -36,7 +37,7 @@ const SignUpForm: FC = () => {
           />
           <input
             placeholder="Username"
-            className="w-80 border-2 mt-3 mb-3 border-pink-300 focus:outline-none pl-3 rounded-xl py-2"
+            className="py-2 pl-3 mt-3 mb-3 border-2 border-pink-300 w-80 focus:outline-none rounded-xl"
             type="text"
             value={state.username}
             onChange={handleChange}
@@ -46,7 +47,7 @@ const SignUpForm: FC = () => {
           />
           <input
             placeholder="Password"
-            className="w-80 border-2 mt-3 mb-3 border-pink-300 focus:outline-none pl-3 rounded-xl py-2"
+            className="py-2 pl-3 mt-3 mb-3 border-2 border-pink-300 w-80 focus:outline-none rounded-xl"
             type="password"
             value={state.password}
             onChange={handleChange}
@@ -54,7 +55,7 @@ const SignUpForm: FC = () => {
             id="password"
             required
           />
-          <Button className="mt-3 py-2">Sign Up</Button>
+          <Button className="py-2 mt-3">Sign Up</Button>
           <ShortLinkText className="self-center mt-3" href="/login">
             Login
           </ShortLinkText>

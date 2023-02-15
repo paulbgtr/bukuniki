@@ -1,11 +1,11 @@
-// todo: make navbar's user settings responsive
-import React, { FC } from "react";
+// todo: user's settings on mobile: normal links
+import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import ProfileImage from "./ProfileImage";
 import Divider from "../Divider";
 
-const Navbar: FC = () => {
+const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ const Navbar: FC = () => {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/dashboard">
-              <h2 className="text-2xl text-pink-300 font-bold">bukuniki</h2>
+              <h2 className="text-2xl font-bold text-pink-300">bukuniki</h2>
             </Link>
             <div className="md:hidden">
               <button
@@ -59,18 +59,18 @@ const Navbar: FC = () => {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-white hover:opacity-50 duration-300">
+              <li className="text-white duration-300 hover:opacity-50">
                 <Link href="/my-journals">My Journals</Link>
               </li>
-              <li className="text-white hover:opacity-50 duration-300">
+              <li className="text-white duration-300 hover:opacity-50">
                 <Link href="/contact">Contact</Link>
               </li>
               <Divider className="md:hidden" />
               <div className="flex flex-col gap-5 md:hidden">
-                <li className="text-white hover:opacity-50 duration-300">
+                <li className="text-white duration-300 hover:opacity-50">
                   <Link href="/my-journals">Settings</Link>
                 </li>
-                <li className="text-white hover:opacity-50 duration-300">
+                <li className="text-white duration-300 hover:opacity-50">
                   <Link href="/contact">Sign Out</Link>
                 </li>
               </div>

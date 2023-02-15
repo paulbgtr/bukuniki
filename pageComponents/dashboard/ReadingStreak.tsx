@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { useLongPress } from "use-long-press";
 
 import Card from "../../components/Card";
 
-const ReadingStreak: FC = () => {
+const ReadingStreak = () => {
   const router = useRouter();
 
   const bind = useLongPress(() => {

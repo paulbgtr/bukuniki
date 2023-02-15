@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import Link from "next/link";
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   className?: string;
 };
 
-const ShortLinkText: FC<Props> = (props) => {
+const ShortLinkText = (props: Props) => {
   return (
     <Link
       href={props.href}

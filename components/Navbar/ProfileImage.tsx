@@ -1,18 +1,18 @@
 // todo: make the component responsive
 
-import React, { FC } from "react";
+import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 import profileImage from "../../public/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.jpeg";
 
-const ProfileImage: FC = () => {
+const ProfileImage = () => {
   const [dropdown, setDropdown] = useState(false);
 
   return (
     <button
       onClick={() => setDropdown(!dropdown)}
-      className="hidden md:block relative w-10 h-10"
+      className="relative hidden w-10 h-10 md:block"
     >
       {dropdown ? <Dropdown /> : null}
       <Image
