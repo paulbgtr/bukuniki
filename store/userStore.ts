@@ -1,3 +1,15 @@
 import { create } from "zustand";
 
-const useUserStore = create((set) => ({}));
+type UserState = {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+};
+
+const useUserStore = create<UserState>()((set) => ({
+  id: "",
+  name: "",
+  email: "",
+  password: "",
+}));
