@@ -5,8 +5,8 @@ interface Props {
   className?: string;
 }
 
-const Text = (props: Props) => {
-  return <p className={`${props.className} text-lg`}>{props.children}</p>;
+const Text = ({ children, className }: Props) => {
+  return <p className={`${className} text-lg`}>{children}</p>;
 };
 
 export default Text;
