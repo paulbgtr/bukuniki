@@ -62,26 +62,24 @@ const NewJournal = () => {
   return (
     <Card title="New Journal">
       <form onSubmit={handleSubmit} action="">
-        <div className="w-full">
-          <input
-            placeholder="Book's Author"
-            className="w-full py-2 pl-3 mt-3 mb-3 border-2 border-pink-300 focus:outline-none rounded-xl"
-            type="text"
-            name="author"
-            value={state.author}
-            onChange={handleChange}
-            required
-          />
-          <input
-            placeholder="Book's Title"
-            className="w-full py-2 pl-3 border-2 border-pink-300 focus:outline-none rounded-xl"
-            type="text"
-            name="title"
-            value={state.title}
-            onChange={handleChange}
-            required
-          />
-        </div>
+        <input
+          placeholder="Book's Author"
+          className="w-full py-2 pl-3 mt-3 mb-3 border-2 border-pink-300 focus:outline-none rounded-xl"
+          type="text"
+          name="author"
+          value={state.author}
+          onChange={handleChange}
+          required
+        />
+        <input
+          placeholder="Book's Title"
+          className="w-full py-2 pl-3 border-2 border-pink-300 focus:outline-none rounded-xl"
+          type="text"
+          name="title"
+          value={state.title}
+          onChange={handleChange}
+          required
+        />
 
         <AddJournal formFilled={isFormFilled} />
       </form>
