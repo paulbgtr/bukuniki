@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Text from "../components/Text";
+
 import LinkHL from "../components/Links/LinkHL";
+import Text from "../components/Text";
 
 const ComingSoon = () => {
   return (
@@ -13,9 +14,9 @@ const ComingSoon = () => {
       </Head>
 
       <main>
-        <div className="text-center my-20">
-          <h1 className="text-7xl font-bold">Coming Soon...</h1>
-          <Text className="mt-4">
+        <div className="flex flex-col gap-4 my-20 text-center">
+          <h1 className="font-bold text-7xl">Coming Soon...</h1>
+          <Text>
             Bukuniki is currently under active development. <br />
             You can follow the development process on our{" "}
             <LinkHL href="https://github.com/gibsol/bukuniki">
