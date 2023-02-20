@@ -26,13 +26,21 @@ const Settings = () => {
             Settings
           </h1>
           <SettingsContaier header="Account Settings">
-            <Username />
-            <Divider />
-            <Email />
-            <Divider />
-            <Password />
-            <Divider />
-            <Delete />
+            <section>
+              <Username />
+              <Divider />
+            </section>
+
+            <section>
+              <Email />
+              <Divider />
+            </section>
+
+            <section>
+              <Password />
+              <Divider />
+              <Delete />
+            </section>
           </SettingsContaier>
         </Layout>
       </main>
