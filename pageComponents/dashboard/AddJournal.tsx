@@ -1,11 +1,11 @@
 import React from "react";
+
 import { notify } from "../../utils/notify";
 
 type AddJournalProps = {
   formFilled: () => boolean;
 };
 
-// ? "plus sign button" that appears in the NewJournal component.
 const AddJournal = ({ formFilled }: AddJournalProps) => {
   const handleClick = () => {
     if (formFilled()) {
