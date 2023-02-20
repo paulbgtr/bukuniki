@@ -14,7 +14,7 @@ const Login = () => {
       </Head>
 
       <main>
-        <Layout className="flex flex-wrap justify-center">
+        <Layout centered>
           <LoginForm />
         </Layout>
       </main>
