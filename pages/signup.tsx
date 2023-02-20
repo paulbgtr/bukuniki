@@ -14,7 +14,7 @@ const SignUp = () => {
       </Head>
 
       <main>
-        <Layout className="flex justify-center">
+        <Layout centered>
           <SignUpForm />
         </Layout>
       </main>
