@@ -20,6 +20,7 @@ const ReadingStreak = () => {
   return (
     <button {...bind()} onClick={cardFlip} className="text-left">
       {flip ? (
+        // todo: add history
         <Card id="streak" textSize="7xl" title="Current Reading Streak">
           History
         </Card>
