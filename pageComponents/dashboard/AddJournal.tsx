@@ -2,11 +2,11 @@ import React from "react";
 
 import { notify } from "../../utils/notify";
 
-type AddJournalProps = {
+type Props = {
   formFilled: () => boolean;
 };
 
-const AddJournal = ({ formFilled }: AddJournalProps) => {
+const AddJournal = ({ formFilled }: Props) => {
   const handleClick = () => {
     if (formFilled()) {
       notify("Journal Added!");
