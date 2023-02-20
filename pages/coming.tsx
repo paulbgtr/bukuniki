@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import LinkHL from "../components/Links/LinkHL";
 import Text from "../components/Text";
+import Layout from "../components/Layout";
 
 const ComingSoon = () => {
   return (
