@@ -1,13 +1,6 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
-
-import Button from "../components/Buttons/Button";
-import Layout from "../components/Layout";
-import Text from "../components/Text";
 
 const Home = () => {
-  const router = useRouter();
-
   return (
     <>
       <Head>
@@ -18,32 +11,7 @@ const Home = () => {
       </Head>
 
       <main>
-        <Layout className="mt-20">
-          <div className="flex flex-col gap-5">
-            <h1 className="w-3 font-bold text-7xl">
-              Book journaling made simple.
-            </h1>
-
-            <Text className="w-96">
-              Bukuniki is a web-based reading journal that will help you develop
-              your reading habits and store all of your records on a book.
-            </Text>
-
-            <section className="flex gap-3">
-              <Button onclick={() => router.push("/coming")}>
-                Get started, It is free!
-              </Button>
-              <Button
-                variant="outlined"
-                onclick={() =>
-                  router.replace("https://github.com/gibsol/bukuniki")
-                }
-              >
-                Star on Github ★
-              </Button>
-            </section>
-          </div>
-        </Layout>
+        <h1>Bukuniki</h1>
       </main>
     </>
   );

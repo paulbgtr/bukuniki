@@ -2,14 +2,3 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
-
-* {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #404258;
-  font-size: 16px;
-  color: #f1f1f1;
-}
-
-.Toastify__toast-theme--dark {
-  background-color: #404258 !important;
-}
