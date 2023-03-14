@@ -10,7 +10,7 @@ export const Layout = ({ children }: Props) => {
   return (
     <>
       <Navbar />
-      {children}
+      <div className="grid justify-center">{children}</div>
     </>
   );
 };
